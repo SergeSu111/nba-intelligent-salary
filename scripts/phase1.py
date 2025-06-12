@@ -1,6 +1,7 @@
 import matplotlib
 import pandas as pd
 import numpy as np
+import joblib
 import matplotlib.pyplot as plt
 matplotlib.use('TkAgg')   # or 'TkAgg', or 'Agg' for non-interactive
 import seaborn as sns
@@ -682,6 +683,11 @@ def summarize(cv_res, name):
 summarize(lr_cv, "Linear Regression")
 summarize(dt_cv, "Decision Tree")
 
+
+
+# 训练完后，保存模型到本地
+joblib.dump(decision_tree_pipeline, "nba_salary_dt_model.pkl")
+print("model saved as nba_salary_dt_model.pkl")
 
 
 

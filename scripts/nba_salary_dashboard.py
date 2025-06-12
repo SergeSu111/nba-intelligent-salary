@@ -1,11 +1,10 @@
-import dash
-from dash import dcc, html, Input, Output, State
+
+from dash import dcc, html, Input, Output, State, dash
 import pandas as pd
 import numpy as np
 import joblib
 
-
-random_forest_pipeline = joblib.load("nba_salary_rf_model.pkl")
+random_forest_pipeline = joblib.load("nba_salary_dt_model.pkl")
 
 team_mapping = {
     "LAL": "Los Angeles Lakers",
