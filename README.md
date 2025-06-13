@@ -38,7 +38,7 @@
 
 
 ## database ERD
-![Phase 1 database ERD](assets/phase1_db_erd.jpg)
+![Phase 1 database ERD](assets/phase1_db_erd.png)
 
 
 ## 🔧 Project Structure
