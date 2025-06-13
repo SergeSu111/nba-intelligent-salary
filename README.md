@@ -34,9 +34,9 @@
     
 
 ## System Design 
-## 🔧 Project Structure
-assets/phase1_system_design.jpg
+![Phase 1 System Design Sketch](assets/phase1_system_design.jpg)
 
+## 🔧 Project Structure
 ```plain
 nba-intelligent-salary/
 ├── db_setup.py             # Load CSV → SQLite tables  
