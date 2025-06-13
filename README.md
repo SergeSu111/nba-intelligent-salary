@@ -36,6 +36,10 @@
 ## System Design 
 ![Phase 1 System Design Sketch](assets/phase1_system_design.jpg)
 
+
+## database ERD
+![Phase 1 database ERD](assets/drawSQL-image-export-2025-06-11 (1).jpg)
+
 ## 🔧 Project Structure
 ```plain
 nba-intelligent-salary/
