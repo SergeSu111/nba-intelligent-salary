@@ -38,7 +38,8 @@
 
 
 ## database ERD
-![Phase 1 database ERD](assets/drawSQL-image-export-2025-06-11 (1).jpg)
+![Phase 1 database ERD](assets/phase1_db_erd.jpg)
+
 
 ## 🔧 Project Structure
 ```plain
