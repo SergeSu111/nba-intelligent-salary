@@ -1,0 +1,244 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #e8f5e9);
+    color: #333;
+}
+
+.main-container {
+    padding: 20px;
+    max-width: 95%;
+    margin: auto;
+}
+
+.header-title {
+    text-align: center;
+    color: #2e7d32;
+    margin-bottom: 30px;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: auto;
+    align-content: stretch;
+    gap: 40px 20px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    height: 100%;
+    gap: 15px; 
+}
+
+
+.label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    font-size: 1.1em;
+}
+
+.slider-display {
+    margin-top: 5px;
+    font-weight: bold;
+    text-align: right;
+    color: #e53935; 
+    font-size: 0.95em;
+}
+
+.dropdown {
+    margin-top: 10px;
+    font-size: 1em;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+.dropdown:hover {
+    border: 1px solid #2e7d32;
+    background-color: #e8f5e9;
+}
+
+.predict-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #43a047;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+}
+
+.predict-button:hover {
+    background-color: #388e3c;
+    transform: scale(1.05);
+}
+
+.salary-display {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #388e3c;
+    text-align: center;
+}
+
+.notes-container {
+    margin-top: 50px;
+    padding: 25px;
+    background-color: #e8f5e9;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feature-notes {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .input-group {
+        width: 100%;
+    }
+}
+
+.form-container, .predict-button, .notes-container {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.rc-slider-mark-text {
+    font-size: 1em;
+    font-weight: bold; 
+    color: #412525; 
+    font-family: 'Poppins', sans-serif; 
+}
+
+.navbar {
+    background-color: #2e7d32; 
+    padding: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-content {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.navbar-content img {
+    border-radius: 5px;
+    max-width: 200px;
+    height: auto;
+}
+
+.navbar-title {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: black; 
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; 
+        text-align: center;
+        padding: 10px;
+    }
+
+    .navbar-content {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+
+    .navbar-content img {
+        max-width: 180px; 
+        margin-bottom: 5px; 
+    }
+
+    .navbar-title {
+        font-size: 1.5em; 
+        margin: 0;
+    }
+}
+
+
+.title-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #2e7d32;
+    margin: 0;
+}
+.floating-basketball {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Floating animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+    background-color: #2e7d32;
+    color: white;
+    font-size: 1em;
+}
