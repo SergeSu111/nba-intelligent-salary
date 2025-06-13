@@ -58,3 +58,15 @@ nba-intelligent-salary/
 │   ├── NBA_Player_Stats.csv
 │   └── NBA_Salaries.csv
 └── README.md
+
+
+git clone https://github.com/your-username/nba-intelligent-salary.git
+cd nba-intelligent-salary
+pip install -r requirements.txt
+
+## Initialize database
+
+bash
+Copy
+Edit
+python db_setup.py
